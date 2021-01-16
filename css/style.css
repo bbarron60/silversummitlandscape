@@ -130,13 +130,25 @@ html{
       box-shadow: 0px 2px 2px 0.5px grey;
           
   }
-  .section{
-    padding-top:130px;
-  }
+ 
   
   #home{
-   padding-top:20px;
+    padding-top:60px;
+    margin-top:-60px;
     width: 100%;
+  }
+  #about{
+    padding-top:60px;
+    margin-top:-60px;
+
+  }
+  #services{
+    padding-top:60px;
+    margin-top:-60px;
+  }
+  #reviews{
+    padding-top:70px;
+    margin-top:-70px;
   }
   
   #message{
@@ -152,10 +164,23 @@ html{
     background-color:white;
   }
   .title{
-     margin-top: 60px;
+     margin-top:70px;
      color:white;
      font-size: 43px;
        
+  }
+  #overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 0; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
   }
   .subtitle{
      color:white;
@@ -230,6 +255,11 @@ html{
     }
     
     }
+
+    #times{
+      text-align: right;
+      margin-right:10px;
+    }
     
     /*navbar*/
     nav {
@@ -238,6 +268,7 @@ html{
       justify-content:space-between;
       font-size: 1.2em;
       background-color:#2b2d4f;
+      height:70px;
       
   }
   .nav2{
@@ -254,6 +285,7 @@ html{
     
 
   }
+ 
   #two{
     display: inline;
     font-size:0.6em;
@@ -304,6 +336,7 @@ html{
   
   #bar{
     color:white;
+    margin-top:20px;
   }
 
 
@@ -369,13 +402,13 @@ html{
   
     #btn {
      
-      background-color:transparent;
+      background-color:#2b2d4f;
       text-decoration: none;
       height: 50px;
       min-width: 150px;
       border: none;
       border-radius: 10px;
-      color: #2b2d4f;
+      color:white;
       font-size: 20px;
       position: relative;
       transition: 1s;
@@ -384,22 +417,13 @@ html{
       align-items: center;
       justify-content: center;
       cursor: pointer;
-      margin-top: 10px;
+      margin-top: 30px;
       
       
      
     }
     
-    #btn #circle {
-      width: 6px;
-      height: 5px;
-      background: transparent;
-      border-radius: 50%;
-      top: 0;
-      left: 50%;
-      overflow: hidden;
-      transition: 500ms;
-    }
+
     
     .noselect {
       -webkit-touch-callout: none;
@@ -412,7 +436,7 @@ html{
     
     #btn:hover {
       background: #2b2d4f;
-      color: white ;
+      color: #c5c3c3 ;
     }
     
     #btn:hover #circle {
@@ -463,7 +487,7 @@ html{
      #about-title{
       
       color:#2b2d4f;
-      font-size:40px;
+      font-size:35px;
       font-weight: bold;
       text-align:center;
       height:40px;  
@@ -475,8 +499,10 @@ html{
    
     
     #about-msg{
-      max-width:800px;
-      height:180px;
+      max-width:470px;
+      height:270px;
+      margin-left:70px;
+      margin-top:-30px;
       background-color:#2b2d4f;
       color:white;
       font-family: 'Montserrat', sans-serif;
@@ -490,7 +516,7 @@ html{
     #about-img{
       background-image: url(../images/back.png);
       background-size: cover;
-      min-width:500px;
+      min-width:700px;
       min-height:500px;
       margin-top: 50px;
       margin-bottom: 50px;
@@ -528,7 +554,11 @@ html{
     
    
    
-    @media (max-width: 1030px){
+    @media (min-width: 1024px){
+      footer.footer-distributed{
+        margin-top:5px;
+        
+      }
       .flex-container1{
         flex-direction:column;
         background-color:#2b2d4f;
@@ -542,7 +572,7 @@ html{
         text-align:center;
       }
       #about-msg{
-       height:200px;
+       height:270px;
        
        margin-top: 80px;
       
@@ -559,22 +589,44 @@ html{
         background-color: #c5c3c3;
         margin-left:-172px;
         margin-right:-156px;
+        margin-top:-25px;
+       
         
        }
+       #prof-hr{
+        display:none;
+      }
+      
       
     }
-  @media (max-width: 800px){
+  @media (max-width: 560px){
+   
+    footer.footer-distributed{
+      margin-top:-20px;
+      padding-top:20px;
+     
+    }
+    #button{
+      margin-top:-10px;
+    }
     .flex-container1{
       flex-direction:column;
       background-color:#2b2d4f;
       
     }
+    .flex-item2{
+      margin-bottom:-50px;
+    }
     #about-msg{
      height:300px;
      margin-top:50px;
-     
-      
+     margin-left:35px;
+    
     }
+    #prof-hr{
+      display:none;
+    }
+    
     #title-hr{
       margin-top:40px;
       border:1px solid #2b2d4f;
@@ -590,28 +642,31 @@ html{
     }
      #form-info{
       background-color: #c5c3c3;
-     margin-left:-45px;
-     margin-right:-50px;
+      margin-left:-45px;
+      margin-right:-50px;
+      height:640px;
      
     }
-    #form-info{
-      background-color: #c5c3c3;
-      margin-left:-20px;
-      
-      
+    
+     footer.footer-distributed{
+       margin-top:0;
+       padding-top:10px;
      }
-  }
-  @media {max-width: 550px){
-
-  }
+    
+    }
+  
   @media (max-width: 500px){
     .flex-item2{
       flex-direction:column;
       align-items:center;
+      margin-bottom:-60px;
     }
     #about-msg{
       height:300px;
       margin-top:60px;
+      margin-left:-20px;
+      padding-left:25px;
+      padding-right:5px;
       
     }
     #about-title{
@@ -628,41 +683,185 @@ html{
     #about-img{
       width:50px;
       height:50px;
+      margin-top:0;
+    }
+    img#review1{
+      margin-top:-33px;
+      width:410px;
     }
     #form-info{
       background-color: #c5c3c3;
       margin-left:-20px;
      }
   }
-  @media (max-width: 370px){
+  @media(max-width:415px){
+    footer.footer-distributed{
+      margin-top:0px;
+      padding-top:50px;
+    }
+    #motto{
+      margin-top:10px;
+    }
+    #review1-msg{
+      margin-top:-10px;
+    }
+    img#review1{
+      margin-top:-34px;
+      width:415px;
+    }
+    #about-msg{
+      margin-left:-15px;
+      padding-left:15px;
+    }
+    #form.contact-form{
+      background-color: #2b2d4f;
+      width:411px;
+      border-bottom:none;
+    }
+    #button{
+      margin-bottom:85px;
+    }
+
+  
+  }
+  @media (max-width: 376px){
+    #motto{
+      margin-top:10px;
+    }
     .flex-item2{
       flex-direction:column;
       align-items:center;
+      height:475px;
+      background-color:#2b2d4f;
+      margin-bottom:-20px;
     }
     #about-msg{
       height:335px;
       font-size:14px;
-      margin-top:60px;
+      margin-top:20px;
+      margin-left:-10px;
+      padding-left:10px;
+      padding-right:5px;
+    }
+    #about-title{
+      color:#2b2d4f;
+      background-color: #c5c3c3;
+      margin-top:-50px;
+      height:100px;
     }
     #title-hr{
       margin-top:100px;
     }
     #about-img{
       width:80px;
-      height:80px;
+      height:60px;
+      margin-top:0;
+      padding-bottom:0;
+    }
+    img#review1{
+      margin-top:-50px;
+      width:auto;
+    }
+    #prof{
+      padding-top:10px;
+     
+    }
+    #prof-services{
+      height:500px;
+      
+      
     }
    
     #form-info{
-      background-color: #c5c3c3;
-     margin-left:-20px;
+    background-color: #c5c3c3;
+     margin-left:-25px;
+     padding-left:10px;
     }
      #fname, #lname{
        width:300px !important;
      }
      #form-info{
        background-color:#c5c3c3;
+       
      }
+     .free-estimate{
+       margin-top:0;
+       margin-left:-40px;
+       
+     }
+    #form.contact-form{
+      background-color: #2b2d4f;
+      border-bottom:none;
      
+    }
+   
+   #button{
+     margin-bottom:80px;
+   }
+   
+   footer.footer-distributed{
+    margin-top:0;
+    padding-top:50px;
+    
+  }
+ 
+     
+  }
+  @media (max-width: 321px){
+    .free-estimate{
+      margin-left:-80px;
+      
+    }
+    #map{
+      margin-left:-40px;
+    }
+    #contact-form{
+      margin-top:20px;
+    }
+    footer.footer-distributed{
+      margin-top:0px;
+      padding-top:50px;
+    }
+  }
+  @media (max-width: 290px){
+    footer.footer-distributed{
+      margin-top:0px;
+      padding-top:50px;
+    }
+    #form-info{
+      height:680px;
+    }
+    h3{
+      margin-top:70px;
+    }
+    .free-estimate{
+      width:200px;
+    }
+    .est-heading{
+      width:200px;
+      margin-left:70px;
+    }
+    h4#est-msg{
+      width:150px;
+      margin-left:100px;
+    }
+    a#our-phone{
+      margin-left:-60px;
+    }
+    #our-email{
+      font-size:12px;
+      margin-left:-40px;
+    }
+    ul.social-icons{
+      margin-left:-40px;
+    }
+    a#google{
+      margin-left:-40px;
+    }
+    #about-title{
+      height:170px;
+    }
+    
   }
   .contact-form{
     display:flex;
@@ -765,6 +964,7 @@ div.reviews{
   flex-direction: row;
   flex-wrap:wrap;
   justify-content: space-around;
+  margin-top:30px;
   width:100%;
   min-height:500px;
   max-height:1000px;
@@ -825,6 +1025,7 @@ div.reviews{
 }
 
 .carousel-item {
+  margin-top:20px;
   height:300px;
   
  
@@ -877,7 +1078,7 @@ div.reviews{
   #review1-msg{
     width:250px;
     font-size: 14px;
-    margin-top:-15px;
+    margin-top:-10px;
   }
  hr{
    display:none;
@@ -917,6 +1118,7 @@ div.reviews{
   height:100px;
   text-align:center;
   padding-top:20px;
+ 
   
 }
 
@@ -929,6 +1131,7 @@ div.reviews{
   height:100vh;
   padding-top:-70px;
   overflow:scroll;
+ 
 }
 .service{
   
@@ -936,7 +1139,7 @@ div.reviews{
   width:24rem;
   height:25rem;
   text-align:center;
-  
+
  
 }
 
@@ -959,6 +1162,13 @@ div.reviews{
   font-weight:bold;
   margin-bottom:10px;
 
+}
+#service-link{
+  text-decoration:none;
+  color:white;
+  background-color: #2b2d4f;
+  margin-top:25px;
+  border:none;
 }
 
 #prof-hr{
@@ -988,7 +1198,7 @@ div.reviews{
   color:#c41200 ;
 }
 #social-icon3:hover{
-  background: #f09433; 
+background: #f09433; 
 background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
 background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
 background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
@@ -1020,7 +1230,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
-  font-family: 'Merriweather', serif;
+  font-family: 'Montserrat', sans-serif;
 	padding: 50px 50px 60px 50px;
   margin-top: 80px;
   
@@ -1034,7 +1244,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
 .footer-distributed .footer-center,
 .footer-distributed .footer-right{
 	display: inline-block;
-	vertical-align: top;
+  vertical-align: top;
+ 
 }
 
 
@@ -1114,7 +1325,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
 
 .footer-distributed .footer-center p a{
 	color: white;
-	text-decoration: none;;
+  text-decoration: none;
+  
 }
 
 
@@ -1146,6 +1358,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
 
 	.footer-distributed .footer-center i{
     text-align: center;
+   
   }
   #map{
     margin-left:-120px;
