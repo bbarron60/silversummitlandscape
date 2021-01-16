@@ -11,7 +11,7 @@
                     <section class="section" id="home">
                         <div class="logo">
                                 <div id="message">
-                                    <div class="overlay"></div>
+                                <div id="overlay"></div>
                                         <div class="heading">
                                             <h1 class="title">
                                                 Welcome to Silver Summit Landscaping LLC
@@ -37,80 +37,7 @@
                             </div>
 
                     </section>
-     
-                    <section class="section" id="about">
-                         
-                        <div class="flex-container2">
-
-                    
-                            <div class="flex-item2">
-                            <div id="about-title">Silver Summit Landscaping LLC </div>
-                             <hr id="title-hr">
-                             
-                            <p id="about-msg">Both Megan and Jacinda were born and raised in Reno, NV.
-                                Since founding <span id="silver">Silver Summit Landscaping</span>, we have worked with numerous clients throughout the area.
-                                We believe great service begins and ends with <span id="silver">experienced</span> and friendly <span id="silver">professionals</span>, 
-                                which is why we put so much consideration into selecting only the best to join our team.
-                                We complete projects efficiently and go <span id="silver"> above and beyond </span>to form lasting relationships.</p>
-
-                            </div>
-                            <div class="flex-item2">
-
-                                 <div id="about-img">
-                                 
-                                 </div>
-                                
-                            </div>
-                        
-                        </div>
-                       
-                        </section>
-
-                        <section class="section" id="services">
-                            <div class="services">
-                                <div id="prof-services">
-                                     <h1 id="prof">Professional Services</h1>
-                                     <hr id="prof-hr">
-                                </div>  
-                                <div class="service">
-                                    <i class="fas fa-seedling fa-6x" id="icon"></i>
-                                    <div class="service-body">
-                                        <h5 class="service-title">Landscaping Design</h5>
-                                        <br>
-                                        <p id="service-text">Silver Summit Landscaping is committed to getting the job done.  You can count on us to be professional, timely, efficient and make sure you’re satisfied every step of the way. </p>
-                                       
-                                        
-                                        
-                                        <a href="#gallery" id="service-link">VIEW OUR WORK</a>
-                                    </div>
-                                </div>
-                                <div class="service">
-                                    <i class="fas fa-hand-sparkles fa-6x" id="icon"></i>
-                                    <div class="service-body">
-                                        <h5 class="service-title">House Cleaning</h5> 
-                                        <br>
-                                        <p id="service-text"> Since its founding, Silver Summit Landscaping has been one of the most trusted names in the industry. Hire us for this service and learn how we cater to the needs of each client, ensuring the results you need and deserve.</p> 
-                                        
-                                        
-                                        
-                                        <a href="#gallery" id="service-link">VIEW OUR WORK</a>
-                                    </div>
-                                </div>
-                                <div class="service">
-                                    <i class="fas fa-recycle fa-6x" id="icon"></i>
-                                <div class="service-body"> 
-                                    <h5 class="service-title">Trash Removal</h5>
-                                    <br>
-                                    <p id="service-text">We have the equipment, experience and skills necessary to tackle just about every type of job that comes our way. With Sierra Cleaning and Landscape, clients know exactly what to expect - professionalism, efficiency and exceptional results.</p>
-                                   
-                                    
-                                    <a href="#gallery" id="service-link">VIEW OUR WORK</a>
-                                </div>
-                                </div> 
-                            </div>
-                        </section>
-
-                        <section class="section" id="reviews">
+                    <section class="section" id="reviews">
                                      <div class="reviews">
                                         <div class="review1-img">
                                             <img id="review1" src="./images/review1.jpg" alt="Professional review">
@@ -169,7 +96,7 @@
                                                 </div>
                                                 <div class="carousel-item">
                                                 <p class="d-block w-100" id="paragraph">I was overwhelmed with emotion at how well of a job they did with my backyard. Amazing service! I am thankful and grateful I found them. 
-                                                    I will definitely be recommending Sierra Summit Cleaning to my friends and family!
+                                                    I will definitely be recommending Silver Summit Landscaping to my friends and family!
                                                     </p>
                                                     <p id="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
                                                     <p id="author">-Cecilia L. </p>
@@ -187,6 +114,80 @@
                                             </div>                                               
                             
                         </section>
+     
+                    <section class="section" id="about">
+                         
+                        <div class="flex-container2">
+
+                    
+                            <div class="flex-item2">
+                            <div id="about-title">Silver Summit Landscaping LLC </div>
+                             <hr id="title-hr">
+                             
+                            <p id="about-msg">Both Megan and Jacinda were born and raised in Reno, NV.
+                                Since founding <span id="silver">Silver Summit Landscaping</span>, we have worked with numerous clients throughout the area.
+                                We believe great service begins and ends with <span id="silver">experienced</span> and friendly <span id="silver">professionals</span>, 
+                                which is why we put so much consideration into selecting only the best to join our team.
+                                We complete projects efficiently and go <span id="silver"> above and beyond </span>to form lasting relationships.</p>
+
+                            </div>
+                            <div class="flex-item2">
+
+                                 <div id="about-img">
+                                 
+                                 </div>
+                                
+                            </div>
+                        
+                        </div>
+                       
+                        </section>
+
+                        <section class="section" id="services">
+                            <div class="services">
+                                <div id="prof-services">
+                                     <h1 id="prof">Professional Services</h1>
+                                     <hr id="prof-hr">
+                                </div>  
+                                <div class="service">
+                                    <i class="fas fa-seedling fa-6x" id="icon"></i>
+                                    <div class="service-body">
+                                        <h5 class="service-title">Landscaping Design</h5>
+                                        <br>
+                                        <p id="service-text">Silver Summit Landscaping is committed to getting the job done.  You can count on us to be professional, timely, efficient and make sure you’re satisfied every step of the way. </p>
+                                       
+                                        
+                                        
+                                        <a href="gallery.php" class="btn btn-info" id="service-link">VIEW OUR WORK</a>
+                                    </div>
+                                </div>
+                                <div class="service">
+                                    <i class="fas fa-hand-sparkles fa-6x" id="icon"></i>
+                                    <div class="service-body">
+                                        <h5 class="service-title">House Cleaning</h5> 
+                                        <br>
+                                        <p id="service-text"> Since its founding, Silver Summit Landscaping has been one of the most trusted names in the industry. Hire us for this service and learn how we cater to the needs of each client, ensuring the results you need and deserve.</p> 
+                                        
+                                        
+                                        
+                                        <a href="gallery.php" class="btn btn-info" id="service-link">VIEW OUR WORK</a>
+                                    </div>
+                                </div>
+                                <div class="service">
+                                    <i class="fas fa-recycle fa-6x" id="icon"></i>
+                                <div class="service-body"> 
+                                    <h5 class="service-title">Trash Removal</h5>
+                                    <br>
+                                    <p id="service-text">We have the equipment, experience and skills necessary to tackle just about every type of job that comes our way. With Sierra Cleaning and Landscape, clients know exactly what to expect - professionalism, efficiency and exceptional results.</p>
+                                   
+                                    
+                                    <a href="gallery.php" class="btn btn-info" id="service-link">VIEW OUR WORK</a>
+                                </div>
+                                </div> 
+                            </div>
+                        </section>
+
+                        
 
                         <section class="section" id="contact">
                         <div class="contact-form" id=form>
@@ -275,4 +276,4 @@
                         <?php
                             require_once './includes/footer.php';
 
-                         ?>
+                        ?>
